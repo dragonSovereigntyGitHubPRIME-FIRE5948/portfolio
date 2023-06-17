@@ -1,0 +1,258 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
+    <link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Connect Adobe Fonts (Web Project) -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'dlf4gfk',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>Portfolio</title>
+</head>
+
+<body class="portfolio-bg">
+
+    <!-- Content -->
+
+    <!-- <div>
+        <button class="btn active" onclick="filterSelection('all')"> All</button>
+        <button class="filter-btn filter-active" data-rel="option-1">Webdevs</button>
+        <button class="filter-btn" data-rel="option-2">Mobile Apps</button>
+        <button class="filter-btn" data-rel="option-3">Games</button>
+        <button class="filter-btn" data-rel="option-4">Design Mockups</button>
+        <button class="filter-btn" data-rel="option-5">Digital Assets</button>
+    </div> -->
+
+    <div class="portfolios-container container-fluid d-flex align-items-center justify-content-center h-75 mb-1 mt-5">
+
+
+        <div class="row w-100">
+
+            <!-- Navbar, jQuery Load -->
+            <div class="col-lg-2 col-sm-12 text-center align-self-center">
+                <div id="nav-placeholder"></div>
+            </div>
+
+
+            <!-- table
+            p07
+            movie -->
+            <!-- Portfolios 1 -->
+            <div class="option-1 portfolios col-lg-8 col-sm-12">
+                <div class="container text-center">
+                    <div class="row h-100 align-items-center">
+                        <div class="portfolios-showcase   col-lg-4 col-sm-6 mb-4">
+                            <a href="movies.html" target=”_blank”><img src="Images/movie.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">Movie Archive App</div>
+                            <div class="portfolio-desc">IT Learning Portal Repsonsive Website built with Bootstrap 5,
+                                HTML & CSS</div>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6 mb-4">
+                            <a href="tablereserve.html" target=”_blank”><img src="Images/donuttrump.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">Donut Trump Reservation</div>
+                            <div class="portfolio-desc">Covid-19 Data Analytics Website built with Bootstrap 5, HTML &
+                                CSS</div>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6 mb-4">
+                            <a href="todo.html" target=”_blank”><img src="Images/todolist.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">To-to-Do App</div>
+                            <div class="portfolio-desc">Covid-19 Data Analytics Website built with Bootstrap 5, HTML &
+                                CSS</div>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="ndpsongs.html" target=”_blank”><img src="Images/song.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">Song List App</div>
+                            <div class="portfolio-desc">Covid-19 Data Analytics Website built with Bootstrap 5, HTML &
+                                CSS</div>
+                        </div>
+
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="collabbee.html" target=”_blank”><img src="Images/collabbeee.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">Collab Bee</div>
+                            <div class="portfolio-desc">Database, Firebase, User Management</div>
+                        </div>
+
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="aisportstracker.html" target=”_blank”><img src="Images/aisports.jpeg" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">AI Sports Tracker</div>
+                            <div class="portfolio-desc">ML Kit, Kotlin, Machine-learning, Numpy, </div>
+                        </div>
+
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="bus.html" target=”_blank”><img src="Images/bus.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">Bus App</div>
+                            <div class="portfolio-desc">Broadcast, Geofence, Google Maps API, Jackson, LTA DataMall</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="portfolios-container container-fluid d-flex align-items-center justify-content-center h-100">
+
+        <div class="row w-100">
+
+            <!-- Portfolios 2 -->
+            <div class="option-1 portfolios col-lg-10 col-sm-12">
+                <div class="container text-center">
+                    <div class="row h-100 align-items-center">
+                        <div class="portfolios-showcase   col-lg-4 col-sm-6 mb-4">
+                            <a href="project_webdev_soiportal.html" target=”_blank”><img src="Images/soi-p.png"
+                                    alt="Portfolio" class="portfolio"></a>
+                            <div class="portfolio-title">SOI Portal</div>
+                            <div class="portfolio-desc">IT Learning Portal Repsonsive Website built with Bootstrap 5,
+                                HTML & CSS</div>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6 mb-4">
+                            <a href="covid19.html" target=”_blank”><img src="Images/covid-p.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">COVID-19 Statistics</div>
+                            <div class="portfolio-desc">Covid-19 Data Analytics Website built with Bootstrap 5, HTML &
+                                CSS</div>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6 mb-4">
+                            <a href="worldxplore.html" target=”_blank”><img src="Images/worldxplore-p.png"
+                                    alt="Portfolio" class="portfolio"></a>
+                            <div class="portfolio-title">World Xplore</div>
+                            <div class="portfolio-desc">Covid-19 Data Analytics Website built with Bootstrap 5, HTML &
+                                CSS</div>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="hobby.html" target=”_blank”><img src="Images/hobby-p.png" alt="Portfolio"
+                                    class="portfolio"></a>
+                            <div class="portfolio-title">Hobby Website</div>
+                            <div class="portfolio-desc">Covid-19 Data Analytics Website built with Bootstrap 5, HTML &
+                                CSS</div>
+                        </div>
+                        <div class="portfolios-showcase   col-lg-4 col-sm-6">
+                            <a href="https://xd.adobe.com/view/f57ba7ed-cf06-42e4-813e-03652bf62143-a028/"
+                                target=”_blank”><img src="Images/wedding.png" alt="Portfolio" class="portfolio"></a>
+                            <p>Wedding Website Mockup</p>
+                        </div>
+                        <div class="portfolios-showcase   col-lg-4 col-sm-6">
+                            <a href="https://xd.adobe.com/view/401877bc-2d0d-40fe-91a5-b48283a84952-154b/"
+                                target=”_blank”><img src="Images/toy.png" alt="Portfolio" class="portfolio"></a>
+                            <p>Toy Kingdom Website Mockup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="portfolios-container container-fluid d-flex align-items-center justify-content-center h-100">
+        <div class="row w-100">
+
+            <!-- Portfolios 3 -->
+            <div class="option-2 portfolios col-lg-10 col-sm-12">
+                <div class="container text-center">
+                    <div class="row h-100 align-items-center">
+                        
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="https://xd.adobe.com/view/48d15d7f-2bb7-44e8-9676-48eac452c98c-1d82/"
+                                target=”_blank”><img src="Images/ar.png" target=”_blank” alt="Portfolio"
+                                    class="portfolio"></a>
+                            <p>AR Airline App Mockup</p>
+                        </div>
+                        <div class="portfolios-showcase  col-lg-4 col-sm-6">
+                            <a href="https://xd.adobe.com/view/38ce3e92-6357-42d3-8015-75ad9eae6202-6d9d/"><img
+                                    src="Images/minds.png" target=”_blank” alt="Portfolio" class="portfolio"></a>
+                            <p>MINDS App Mockup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-2 border-top footer">
+            <p class="col-md-4 mb-0 text-body-secondary">Copyright© 2023 Neo Zhiwei Marcus</p>
+
+            <a href="index.html"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                logo
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </ul>
+        </footer>
+    </div> -->
+
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        // 1. Load Navbar
+        $(function () {
+            $("#nav-placeholder").load("navbar.html");
+        });
+
+        // 2. Filter Portfolios
+        $(function () {
+            // create an empty variable
+            var selectedCategory = "";
+
+            // call function when item is clicked
+            $(".filter-btn").click(function () {
+                // assigns class to selected item
+                selectedCategory = $(this).attr("data-rel");
+                // fades out all portfolio items
+                $(".portfolios").fadeOut(300);
+                // fades in selected category
+                $("." + selectedCategory).delay(300).fadeIn(300);
+                // $(".portfolio li." + selectedClass).delay(300).fadeIn(300);
+            });
+        });
+
+        // $(".filter-btn").click(function () {
+        //     $(".portfolios-showcase").hide();
+        // });
+
+    });
+</script>
+
+</html>
